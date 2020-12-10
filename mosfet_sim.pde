@@ -1,3 +1,9 @@
+/* @pjs preload="data/id_vds-nmos.png"; */
+/* @pjs preload="data/id_vgs-nmos.png"; */
+/* @pjs preload="data/id_vds-pmos.png"; */
+/* @pjs preload="data/id_vgs-pmos.png"; */
+/* @pjs preload="data/BellMTItalic-14.vlw"; */
+
 int Sel;
 PImage back[];
 PFont segoe, brush, bell, bradley;
@@ -9,11 +15,11 @@ void setup()
   smooth();
   background(210,220,120);
   back = new PImage[4];
-  back[0] = loadImage("id_vds-nmos.png");
-  back[1] = loadImage("id_vgs-nmos.png");
-  back[2] = loadImage("id_vds-pmos.png");
-  back[3] = loadImage("id_vgs-pmos.png");
-  bell = loadFont("BellMTItalic-14.vlw");
+  back[0] = loadImage("data/id_vds-nmos.png");
+  back[1] = loadImage("data/id_vgs-nmos.png");
+  back[2] = loadImage("data/id_vds-pmos.png");
+  back[3] = loadImage("data/id_vgs-pmos.png");
+  bell = loadFont("data/BellMTItalic-14.vlw");
   // Default Values
   Sel = 0;
   Vg = 0.0;
