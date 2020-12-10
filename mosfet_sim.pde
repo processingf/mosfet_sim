@@ -2,7 +2,7 @@
 /* @pjs preload="data/id_vgs-nmos.png"; */
 /* @pjs preload="data/id_vds-pmos.png"; */
 /* @pjs preload="data/id_vgs-pmos.png"; */
-/* @pjs preload="data/BellMTItalic-14.vlw"; */
+/* @pjs font="data/BellMTItalic-14.ttf"; */
 
 int Sel;
 PImage back[];
@@ -225,7 +225,7 @@ void draw()
   }
   if((Sel & 2) > 0) Id = -Id;
   // Draw Values (info)
-  textFont(bell);
+  textFont(bell, 14);
   fill(80, 80, 80);
   if((Sel & 2) > 0) text("kp  = "+kd+" mA/V", 10, 455);
   else text("kn  = "+kd+" mA/V", 10, 455);

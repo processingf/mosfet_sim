@@ -1,3 +1,8 @@
+@font-face {
+  font-family: 'data/BellMTItalic-14.vlw';
+  src: url('data/BellMTItalic-14.ttf');
+}
+
 body {
   margin: auto;
   text-align: center;
